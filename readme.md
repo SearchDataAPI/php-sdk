@@ -48,7 +48,7 @@ This SDK provides a class for each search engine from searchdata.io. Here is the
 Using the SDK it's quite easy. An example of a GET call to the API is the following:
 
 ```
-$googleSearch = new SearchdataGoogleSearch('7ufscF3F4dOyIhupOvIfKtkt0NCW4K77');
+$googleSearch = new SearchdataGoogleSearch('YOUR_API_KEY');
 $locationsAPI = new SearchdataLocations();
 
 try {
@@ -60,6 +60,27 @@ try {
     $googleSearch->set_location($locations[0]['location']);
 
     $response = $googleSearch->execute();
+    echo json_encode($response['body']);
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
+```
+
+Alternatively, you can use the function executeRaw, which will allow you to send the parameters in an associative array:
+
+```
+$googleSearch = new SearchdataGoogleSearch('YOUR_API_KEY');
+$locationsAPI = new SearchdataLocations();
+
+try {
+    $locations = $locationsAPI->execute('New York', 1)['body'];
+
+    $response = $googleSearch->executeRaw([
+        'q' => 'test',
+        'device' => 'mobile',
+        'lr' => 'lang_en|lang_ar',
+        'location' => $locations[0]['location']
+    ]);
     echo json_encode($response['body']);
 } catch (Exception $e) {
     echo $e->getMessage();
