@@ -9,7 +9,7 @@
             "email": "accounts@jeco.dev"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
