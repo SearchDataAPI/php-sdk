@@ -42,6 +42,7 @@ This SDK provides a class for each search engine from searchdata.io. Here is the
 | SearchdataGoogleScholarAuthor   | google scholar author searches   |
 | SearchdataGoogleScholarCite     | google scholar cite searches     |
 | SearchdataGoogleScholarProfiles | google scholar profiles searches |
+| SearchdataLocations             | locations api                    |
 
 ## Usage
 
