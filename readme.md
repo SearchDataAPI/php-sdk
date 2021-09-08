@@ -1,5 +1,5 @@
 # SearchData PHP SDK
-SearchData is an API that allows scraping various search engines such as Google, Bing, Yandex, etc. while using rotating proxies to prevent bans. This SDK for Java makes the usage of the API easier to implement in any project you have.
+SearchData is an API that allows scraping various search engines such as Google, Bing, Yandex, etc. while using rotating proxies to prevent bans. This SDK for PHP makes the usage of the API easier to implement in any project you have.
 
 ## Dependencies 
 
