@@ -2,7 +2,7 @@
 
 include dirname(__FILE__) . '/src/autoloader.php';
 
-$googleSearch = new SearchdataGoogleSearch('7ufscF3F4dOyIhupOvIfKtkt0NCW4K77');
+$googleSearch = new SearchdataGoogleSearch('YOUR_API_KEY');
 $locationsAPI = new SearchdataLocations();
 
 try {
