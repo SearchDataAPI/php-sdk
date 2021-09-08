@@ -4,16 +4,18 @@
  * Searchdata.io SDK
  */
 class SearchDataSDK {
-    private $api_key;
-    private $engine;
-    private $params;
+    protected $api_key;
+    protected $engine;
+    protected $params;
+    protected $api_url;
+    protected $is_searchdata_api;
 
     /**
      * The constructor
      *
      * @return void
      */
-    public function __construct($api_key)
+    public function __construct($api_key = "")
     {
         $this->api_key = $api_key;
     }
@@ -25,11 +27,13 @@ class SearchDataSDK {
      */
     public function execute()
     {
-        if (!isset($engine) || empty($engine)) {
-            throw new Exception('Missing "engine" parameter');
-        }
-        if (!isset($api_key) || empty($api_key)) {
-            throw new Exception('Missing "api_key" parameter');
+        if ($this->is_searchdata_api) {
+            if (!isset($this->engine) || empty($this->engine)) {
+                throw new Exception('Missing "engine" parameter');
+            }
+            if (!isset($this->api_key) || empty($this->api_key)) {
+                throw new Exception('Missing "api_key" parameter');
+            }
         }
         return $this->apiCall($this->params);
     }
@@ -41,11 +45,13 @@ class SearchDataSDK {
      */
     public function executeRaw($params = [])
     {
-        if (!isset($engine) || empty($engine)) {
-            throw new Exception('Missing "engine" parameter');
-        }
-        if (!isset($api_key) || empty($api_key)) {
-            throw new Exception('Missing "api_key" parameter');
+        if ($this->is_searchdata_api) {
+            if (!isset($this->engine) || empty($this->engine)) {
+                throw new Exception('Missing "engine" parameter');
+            }
+            if (!isset($this->api_key) || empty($this->api_key)) {
+                throw new Exception('Missing "api_key" parameter');
+            }
         }
         return $this->apiCall($params);
     }
@@ -57,16 +63,19 @@ class SearchDataSDK {
      */
     private function apiCall($params)
     {
-        $params['api_key'] = $this->api_key;
-        $params['engine'] = $this->engine;
+        if ($this->is_searchdata_api) {
+            $params['api_key'] = $this->api_key;
+            $params['engine'] = $this->engine;
+        }
 
         $query_string = http_build_query($params, '', '&', PHP_QUERY_RFC3986);
 
         $curl = curl_init();
 
         curl_setopt_array($curl, [
-            CURLOPT_URL => "https://api.searchdata.io/v1?" . $query_string,
+            CURLOPT_URL => $this->api_url . "?" . $query_string,
             CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HEADER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
             CURLOPT_TIMEOUT => 30,
@@ -76,13 +85,20 @@ class SearchDataSDK {
         
         $response = curl_exec($curl);
         $err = curl_error($curl);
+
+        $header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
+        $header = substr($response, 0, $header_size);
+        $body = substr($response, $header_size);
         
         curl_close($curl);
         
         if ($err) {
             throw new Exception($err);
         } else {
-            return $response;
+            return [
+                'header' => $header,
+                'body' => json_decode($body, true)
+            ];
         }
     }
 }
