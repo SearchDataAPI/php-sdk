@@ -12,6 +12,8 @@
     "minimum-stability": "stable",
     "require": {},
     "autoload": {
-        "files": ["src/autoloader.php"]
+        "psr-4": {
+            "SearchdataSDK\\": "src/"
+        }
     }
 }
