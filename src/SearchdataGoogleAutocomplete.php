@@ -1,5 +1,7 @@
 <?php 
 
+namespace SearchdataSDK;
+
 /***
  * Searchdata.io Google Autocomplete Search SDK
  */

@@ -1,5 +1,7 @@
 <?php 
 
+namespace SearchdataSDK;
+
 /***
  * Searchdata.io Google Scholar Search SDK
  */

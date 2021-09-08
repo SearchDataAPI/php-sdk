@@ -49,6 +49,13 @@ This SDK provides a class for each search engine from searchdata.io. Here is the
 Using the SDK it's quite easy. An example of a GET call to the API is the following:
 
 ```
+<?php 
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use SearchdataSDK\SearchdataGoogleSearch;
+use SearchdataSDK\SearchdataLocations;
+
 $googleSearch = new SearchdataGoogleSearch('YOUR_API_KEY');
 $locationsAPI = new SearchdataLocations();
 
@@ -70,6 +77,13 @@ try {
 Alternatively, you can use the function executeRaw, which will allow you to send the parameters in an associative array:
 
 ```
+<?php 
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use SearchdataSDK\SearchdataGoogleSearch;
+use SearchdataSDK\SearchdataLocations;
+
 $googleSearch = new SearchdataGoogleSearch('YOUR_API_KEY');
 $locationsAPI = new SearchdataLocations();
 
