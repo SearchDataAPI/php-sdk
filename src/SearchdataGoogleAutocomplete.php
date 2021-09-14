@@ -40,7 +40,7 @@ class SearchdataGoogleAutocomplete extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }

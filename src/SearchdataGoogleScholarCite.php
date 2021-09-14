@@ -58,7 +58,7 @@ class SearchdataGoogleScholarCite extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -68,7 +68,7 @@ class SearchdataGoogleScholarCite extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }

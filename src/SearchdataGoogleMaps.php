@@ -140,7 +140,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -150,7 +150,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -160,7 +160,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_type($value)
+    public function get_type()
     {
         return $this->params['type'];
     }
@@ -170,7 +170,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_data($value)
+    public function get_data()
     {
         return $this->params['data'];
     }
@@ -180,7 +180,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_ll($value)
+    public function get_ll()
     {
         return $this->params['ll'];
     }
@@ -190,7 +190,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }
@@ -200,7 +200,7 @@ class SearchdataGoogleMaps extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_google_domain($value)
+    public function get_google_domain()
     {
         return $this->params['google_domain'];
     }

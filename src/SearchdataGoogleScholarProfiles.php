@@ -88,7 +88,7 @@ class SearchdataGoogleScholarProfiles extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_mauthors($value)
+    public function get_mauthors()
     {
         return $this->params['mauthors'];
     }
@@ -98,7 +98,7 @@ class SearchdataGoogleScholarProfiles extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_after_author($value)
+    public function get_after_author()
     {
         return $this->params['after_author'];
     }
@@ -108,7 +108,7 @@ class SearchdataGoogleScholarProfiles extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_before_author($value)
+    public function get_before_author()
     {
         return $this->params['before_author'];
     }
@@ -118,7 +118,7 @@ class SearchdataGoogleScholarProfiles extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }

@@ -74,7 +74,7 @@ class SearchdataGoogleMapsReviews extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -84,7 +84,7 @@ class SearchdataGoogleMapsReviews extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -94,7 +94,7 @@ class SearchdataGoogleMapsReviews extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_location($value)
+    public function get_location()
     {
         return $this->params['location'];
     }

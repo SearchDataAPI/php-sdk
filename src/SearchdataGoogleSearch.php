@@ -442,7 +442,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -452,7 +452,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_flatten_results($value)
+    public function get_flatten_results()
     {
         return $this->params['flatten_results'];
     }
@@ -462,7 +462,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -472,7 +472,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_cookie($value)
+    public function get_cookie()
     {
         return $this->params['cookie'];
     }
@@ -482,7 +482,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_empty_results($value)
+    public function get_empty_results()
     {
         return $this->params['empty_results'];
     }
@@ -492,7 +492,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_time_period($value)
+    public function get_time_period()
     {
         return $this->params['time_period'];
     }
@@ -502,7 +502,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_time_period_min($value)
+    public function get_time_period_min()
     {
         return $this->params['time_period_min'];
     }
@@ -512,7 +512,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_time_period_max($value)
+    public function get_time_period_max()
     {
         return $this->params['time_period_max'];
     }
@@ -522,7 +522,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_sort_by($value)
+    public function get_sort_by()
     {
         return $this->params['sort_by'];
     }
@@ -532,7 +532,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_location($value)
+    public function get_location()
     {
         return $this->params['location'];
     }
@@ -542,7 +542,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_uule($value)
+    public function get_uule()
     {
         return $this->params['uule'];
     }
@@ -552,7 +552,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_lr($value)
+    public function get_lr()
     {
         return $this->params['lr'];
     }
@@ -562,7 +562,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }
@@ -572,7 +572,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_gl($value)
+    public function get_gl()
     {
         return $this->params['gl'];
     }
@@ -582,7 +582,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_google_domain($value)
+    public function get_google_domain()
     {
         return $this->params['google_domain'];
     }
@@ -592,7 +592,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_start($value)
+    public function get_start()
     {
         return $this->params['start'];
     }
@@ -602,7 +602,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_num($value)
+    public function get_num()
     {
         return $this->params['num'];
     }
@@ -612,7 +612,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_ijn($value)
+    public function get_ijn()
     {
         return $this->params['ijn'];
     }
@@ -622,7 +622,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_safe($value)
+    public function get_safe()
     {
         return $this->params['safe'];
     }
@@ -632,7 +632,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_filter($value)
+    public function get_filter()
     {
         return $this->params['filter'];
     }
@@ -642,7 +642,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_nfpr($value)
+    public function get_nfpr()
     {
         return $this->params['nfpr'];
     }
@@ -652,7 +652,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_tbs($value)
+    public function get_tbs()
     {
         return $this->params['tbs'];
     }
@@ -662,7 +662,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_ludocid($value)
+    public function get_ludocid()
     {
         return $this->params['ludocid'];
     }
@@ -672,7 +672,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_lsig($value)
+    public function get_lsig()
     {
         return $this->params['lsig'];
     }
@@ -682,7 +682,7 @@ class SearchdataGoogleSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_tbm($value)
+    public function get_tbm()
     {
         return $this->params['tbm'];
     }

@@ -138,7 +138,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_text($value)
+    public function get_text()
     {
         return $this->params['text'];
     }
@@ -148,7 +148,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -158,7 +158,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_lang($value)
+    public function get_lang()
     {
         return $this->params['lang'];
     }
@@ -168,7 +168,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_location($value)
+    public function get_location()
     {
         return $this->params['location'];
     }
@@ -178,7 +178,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_lr($value)
+    public function get_lr()
     {
         return $this->params['lr'];
     }
@@ -188,7 +188,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_p($value)
+    public function get_p()
     {
         return $this->params['p'];
     }
@@ -198,7 +198,7 @@ class SearchdataYandexSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_yandex_domain($value)
+    public function get_yandex_domain()
     {
         return $this->params['yandex_domain'];
     }

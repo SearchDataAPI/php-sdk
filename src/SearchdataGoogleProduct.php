@@ -170,7 +170,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -180,7 +180,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -190,7 +190,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_product_id($value)
+    public function get_product_id()
     {
         return $this->params['product_id'];
     }
@@ -200,7 +200,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_location($value)
+    public function get_location()
     {
         return $this->params['location'];
     }
@@ -210,7 +210,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_uule($value)
+    public function get_uule()
     {
         return $this->params['uule'];
     }
@@ -220,7 +220,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }
@@ -230,7 +230,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_gl($value)
+    public function get_gl()
     {
         return $this->params['gl'];
     }
@@ -240,7 +240,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_google_domain($value)
+    public function get_google_domain()
     {
         return $this->params['google_domain'];
     }
@@ -250,7 +250,7 @@ class SearchdataGoogleProduct extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_start($value)
+    public function get_start()
     {
         return $this->params['start'];
     }

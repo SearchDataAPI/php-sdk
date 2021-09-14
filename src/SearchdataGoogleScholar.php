@@ -206,7 +206,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -216,7 +216,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_cites($value)
+    public function get_cites()
     {
         return $this->params['cites'];
     }
@@ -226,7 +226,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_as_ylo($value)
+    public function get_as_ylo()
     {
         return $this->params['as_ylo'];
     }
@@ -236,7 +236,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_as_yhi($value)
+    public function get_as_yhi()
     {
         return $this->params['as_yhi'];
     }
@@ -246,7 +246,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_scisbd($value)
+    public function get_scisbd()
     {
         return $this->params['scisbd'];
     }
@@ -256,7 +256,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_as_vis($value)
+    public function get_as_vis()
     {
         return $this->params['as_vis'];
     }
@@ -266,7 +266,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_lr($value)
+    public function get_lr()
     {
         return $this->params['lr'];
     }
@@ -276,7 +276,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }
@@ -286,7 +286,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_start($value)
+    public function get_start()
     {
         return $this->params['start'];
     }
@@ -296,7 +296,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_num($value)
+    public function get_num()
     {
         return $this->params['num'];
     }
@@ -306,7 +306,7 @@ class SearchdataGoogleScholar extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_safe($value)
+    public function get_safe()
     {
         return $this->params['safe'];
     }

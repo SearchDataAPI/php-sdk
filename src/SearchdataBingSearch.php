@@ -156,7 +156,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_q($value)
+    public function get_q()
     {
         return $this->params['q'];
     }
@@ -166,7 +166,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -176,7 +176,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_cc($value)
+    public function get_cc()
     {
         return $this->params['cc'];
     }
@@ -186,7 +186,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_setLang($value)
+    public function get_setLang()
     {
         return $this->params['setLang'];
     }
@@ -196,7 +196,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_offset($value)
+    public function get_offset()
     {
         return $this->params['offset'];
     }
@@ -206,7 +206,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_mkt($value)
+    public function get_mkt()
     {
         return $this->params['mkt'];
     }
@@ -216,7 +216,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_safeSearch($value)
+    public function get_safeSearch()
     {
         return $this->params['safeSearch'];
     }
@@ -226,7 +226,7 @@ class SearchdataBingSearch extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_location($value)
+    public function get_location()
     {
         return $this->params['location'];
     }

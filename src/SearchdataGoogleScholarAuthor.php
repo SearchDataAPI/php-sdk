@@ -158,7 +158,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_device($value)
+    public function get_device()
     {
         return $this->params['device'];
     }
@@ -168,7 +168,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_author_id($value)
+    public function get_author_id()
     {
         return $this->params['author_id'];
     }
@@ -178,7 +178,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_view_op($value)
+    public function get_view_op()
     {
         return $this->params['view_op'];
     }
@@ -188,7 +188,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_sort($value)
+    public function get_sort()
     {
         return $this->params['sort'];
     }
@@ -198,7 +198,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_citation_id($value)
+    public function get_citation_id()
     {
         return $this->params['citation_id'];
     }
@@ -208,7 +208,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return string
      */
-    public function get_hl($value)
+    public function get_hl()
     {
         return $this->params['hl'];
     }
@@ -218,7 +218,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_start($value)
+    public function get_start()
     {
         return $this->params['start'];
     }
@@ -228,7 +228,7 @@ class SearchdataGoogleScholarAuthor extends SearchDataSDK {
      *
      * @return integer
      */
-    public function get_num($value)
+    public function get_num()
     {
         return $this->params['num'];
     }
