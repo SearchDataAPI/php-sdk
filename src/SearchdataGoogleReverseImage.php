@@ -18,22 +18,6 @@ class SearchdataGoogleReverseImage extends SearchDataSDK {
         $this->api_url = 'https://api.searchdata.io/v1';
         $this->is_searchdata_api = true;
     }
-    
-    /**
-     * Set parameter q
-     * 
-     * @param  string  $value  The terms that you are searching for (the query). 
-     *
-     * @return void
-     */
-    public function set_q($value)
-    {
-        if (gettype($value) != 'string') {
-            throw new Exception('Paramter "q" is not of type "string"');
-        }
-        
-        $this->params['q'] = $value;
-    }
 
     /**
      * Set parameter device
@@ -163,16 +147,6 @@ class SearchdataGoogleReverseImage extends SearchDataSDK {
         }
         
         $this->params['google_domain'] = $value;
-    }
-
-    /**
-     * Get parameter q
-     *
-     * @return string
-     */
-    public function get_q()
-    {
-        return $this->params['q'];
     }
 
     /**
